@@ -8,9 +8,17 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="./scss/css/styles.css" />
   </head>
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 4 starter </h3>
+    <header class="header">
+      <div class="header__logo">Logo</div>
+      <nav class="header__nav">
+        <a href="#" class="header__item">Home</a>
+        <a href="#" class="header__item">About</a>
+        <a href="#" class="header__item">Contact</a>
+      </nav>
+    </header>
+    <script src="./js/main.js"></script>
   </body>
 </html>

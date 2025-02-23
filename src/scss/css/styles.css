@@ -1,0 +1,21 @@
+.header {
+  background-color: #3498db;
+  padding: 40px;
+}
+.header__logo {
+  font-size: 32px;
+  color: white;
+}
+.header__nav {
+  display: flex;
+  gap: 60px;
+}
+.header__item {
+  color: white;
+  text-decoration: none;
+}
+.header__item:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=styles.css.map */
