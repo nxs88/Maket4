@@ -69,17 +69,18 @@
       color: #7e7e82;
     }
   }
+  &__link::before {
+    content: '';
+    width: 4px;
+    height: 32px;
+    background-color: #41f6d7;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 135px;
+  }
 }
-.fb-menu__link::before {
-  content: '';
-  width: 4px;
-  height: 32px;
-  background-color: #41f6d7;
-  border-radius: 2px;
-  position: absolute;
-  left: 0;
-  top: 135px;
-}
+
 .fb-footer {
   &__actions {
     display: flex;

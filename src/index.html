@@ -8,9 +8,9 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CPS Project</title>
-    <link rel="stylesheet" href="/dist/style.css" />
   </head>
   <body>
+    <!-- Боковое меню -->
     <aside class="fixed-block">
       <div class="fb-header">
         <div class="fb-header__inner">
@@ -84,6 +84,100 @@
         </div>
       </footer>
     </aside>
-    <script src="./js/index.js"></script>
+    <!-- Хэдер -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__inner">
+          <nav class="menu">
+            <button class="round-icon round-icon--menu"></button>
+          </nav>
+          <div class="divider divider1"></div>
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img src="./images/Group.svg" alt="logo" class="logo__link-img" />
+            </a>
+          </div>
+          <div class="header__btns">
+            <button class="round-icon round-icon--contacts"></button>
+            <button class="round-icon round-icon--chat"></button>
+            <button class="round-icon round-icon--profile"></button>
+            <div class="divider divider2"></div>
+            <button class="round-icon round-icon--request"></button>
+            <button class="round-icon round-icon--status"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="shadow"></div>
+    <main class="main">
+      <div class="main__container">
+        <div class="main__title">
+          <h1 class="main__title-text">Услуги и сервисы</h1>
+          <button class="header-btn header-btn--request">
+            <span class="header-btn__text">Оставить заявку</span>
+            <span class="round-icon round-icon--request"></span>
+          </button>
+          <button class="header-btn header-btn--status">
+            <span class="header-btn__text">Статус ремонта</span>
+            <span class="round-icon round-icon--status"></span>
+          </button>
+        </div>
+      </div>
+      <nav class="slide-menu">
+        <ul class="slide-menu__list">
+          <li class="slide-menu__item">
+            <a href="#" class="slide-menu__item-link"
+              >Ремонтируемые устройства</a
+            >
+          </li>
+          <li class="slide-menu__item">
+            <a href="#" class="slide-menu__item-link">Дополнительные услуги</a>
+          </li>
+          <li class="slide-menu__item">
+            <a href="#" class="slide-menu__item-link">Цены на услуги</a>
+          </li>
+          <li class="slide-menu__item">
+            <a href="#" class="slide-menu__item-link">Специальные цены</a>
+          </li>
+          <li class="slide-menu__item">
+            <a href="#" class="slide-menu__item-link"
+              >Адреса сервисных центров</a
+            >
+          </li>
+          <li class="slide-menu__item">
+            <a href="#" class="slide-menu__item-link">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+      <acrticle class="about-us">
+        <section class="description">
+          <div class="main__container">
+            <p class="description__text">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+
+              <br /><br />
+
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера ,что подтверждает большое количество постоянных клиентов.
+              Мы гордимся тем , что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+            </p>
+            <button class="description__link expend-btn">
+              <span class="description__link-icon"></span>
+              <span class="description__link-text">Читать далее</span>
+            </button>
+          </div>
+        </section>
+
+        <img
+          class="main-img"
+          src="./images/main-img.jpeg"
+          alt="main-img"
+          width="530"
+        />
+      </acrticle>
+    </main>
   </body>
 </html>
