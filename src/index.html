@@ -7,17 +7,83 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>CPS Project</title>
     <link rel="stylesheet" href="/dist/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo">Logo</div>
-      <nav class="header__nav">
-        <a href="#" class="header__item">Home</a>
-        <a href="#" class="header__item">About</a>
-        <a href="#" class="header__item">Contact</a>
+    <aside class="fixed-block">
+      <div class="fb-header">
+        <div class="fb-header__inner">
+          <button class="fb-round-icon fb-round-icon--menu"></button>
+          <div class="fb-logo">
+            <a href="#" class="fb-logo__link">
+              <img
+                src="./images/Group.svg"
+                alt="logo"
+                class="fb-logo__link-img"
+              />
+            </a>
+          </div>
+          <button class="fb-round-icon fb-round-icon--search"></button>
+        </div>
+      </div>
+      <nav class="fb-menu">
+        <ul class="fb-menu__list">
+          <li class="fb-menu__item">
+            <a href="#" class="fb-menu__link fb-menu__link--current"
+              >Ремонт техники</a
+            >
+          </li>
+          <li class="fb-menu__item">
+            <a href="#" class="fb-menu__link">Услуги и сервисы</a>
+          </li>
+          <li class="fb-menu__item">
+            <a href="#" class="fb-menu__link">Корпоративным клиентам</a>
+          </li>
+          <li class="fb-menu__item">
+            <a href="#" class="fb-menu__link">Продавцам техники</a>
+          </li>
+          <li class="fb-menu__item">
+            <a href="#" class="fb-menu__link">Партнерам</a>
+          </li>
+          <li class="fb-menu__item">
+            <a href="#" class="fb-menu__link">Производителям</a>
+          </li>
+          <li class="fb-menu__item">
+            <a href="#" class="fb-menu__link">Наши сервисные центры</a>
+          </li>
+          <li class="fb-menu__item">
+            <a href="#" class="fb-menu__link">Контакты</a>
+          </li>
+        </ul>
       </nav>
-    </header>
+      <footer class="fb-footer">
+        <div class="fb-footer__actions">
+          <button class="fb-round-icon fb-round-icon--phone"></button>
+          <button class="fb-round-icon fb-round-icon--chat"></button>
+          <button class="fb-round-icon fb-round-icon--profile"></button>
+        </div>
+        <div class="fb-footer__contacts">
+          <div class="fb-footer__contact">
+            <a href="mailto:mail@cps.com" class="fb-footer__contact-mail"
+              >mail@cps.com</a
+            >
+          </div>
+          <div class="fb-footer__contact">
+            <a href="tel:8 800 890 8900" class="fb-footer__contact-phone"
+              >8 800 890 8900</a
+            >
+          </div>
+        </div>
+        <div class="fb-footer__lang">
+          <a href="#" class="fb-footer__lang-item fb-footer__lang-item--current"
+            >RU</a
+          >
+          <a href="#" class="fb-footer__lang-item">EN</a>
+          <a href="#" class="fb-footer__lang-item">CH</a>
+        </div>
+      </footer>
+    </aside>
+    <script src="./js/index.js"></script>
   </body>
 </html>

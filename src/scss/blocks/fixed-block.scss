@@ -1,0 +1,134 @@
+.fixed-block {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 272px;
+  height: 100vh;
+  padding: 0 24px;
+  box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  z-index: 2;
+  transition: transform 0.5s ease-out;
+  transform: translateX(-100%);
+}
+.fixed-block.open {
+  transform: translateX(0);
+}
+.fb-header {
+  &__inner {
+    display: flex;
+    padding-top: 23px;
+    gap: 16px;
+    margin-bottom: 45px;
+  }
+}
+.fb-round-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  transition: transform 0.3s;
+
+  &--menu {
+    background: url(../images/menu.svg);
+  }
+
+  &--search {
+    background: url(../images/search.svg);
+  }
+
+  &--phone {
+    background: url(../images/phone.svg);
+  }
+
+  &--chat {
+    background: url(../images/chat.svg);
+  }
+
+  &--profile {
+    background: url(../images/profile.svg);
+  }
+}
+.fb-logo {
+  margin-right: auto;
+}
+.fb-menu {
+  margin-bottom: auto;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $text-color;
+    font-weight: 500;
+    &--current {
+      color: #7e7e82;
+    }
+  }
+}
+.fb-menu__link::before {
+  content: '';
+  width: 4px;
+  height: 32px;
+  background-color: #41f6d7;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  top: 135px;
+}
+.fb-footer {
+  &__actions {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  &__contact-mail {
+    font-weight: 500;
+  }
+
+  &__contact-phone {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  &__lang {
+    padding-bottom: 32px;
+    display: flex;
+    gap: 7px;
+  }
+
+  &__lang-item {
+    &--current {
+      font-weight: 500;
+    }
+  }
+}
+.fb-footer__lang-item--current {
+  color: #7e7e82;
+}
+.fb-round-icon {
+  transition: transform 0.5s ease;
+}
+.fb-round-icon:hover {
+  transform: scale(1.2);
+}
+
+.fb-round-icon--menu {
+  transform: rotate(0deg) scale(1);
+  transition: transform 0.5s ease-out;
+}
+.fb-round-icon--menu:hover {
+  transform: rotate(180deg) scale(1.2);
+}
