@@ -40,6 +40,14 @@ module.exports = {
           'sass-loader' // compiles Sass to CSS, using Node Sass by default
         ]
       },
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader, // Extract css to separate file
+          'css-loader', // translates CSS into CommonJS
+          'postcss-loader' // parse CSS and add vendor prefixes to CSS rules
+        ]
+      },
 
       // Подключаем шрифты из css
       {

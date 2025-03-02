@@ -24,22 +24,7 @@
   border-radius: 2px;
   margin-right: 10px;
 }
-.header-btn {
-  &--request {
-  }
 
-  &--status {
-  }
-}
-.button-text {
-}
-.round-icon {
-  &--request {
-  }
-
-  &--status {
-  }
-}
 .slide-menu {
   &__list {
     display: flex;
@@ -119,9 +104,7 @@
   height: auto;
   overflow: visible;
 }
-// .expend-btn {
 
-// }
 .main-img {
   width: 100%;
 }
@@ -131,6 +114,7 @@
     display: flex;
     gap: 40px;
     justify-content: space-between;
+
   }
 
   .description {
@@ -195,5 +179,11 @@
   .main-img {
     width: 530px;
     height: 307px;
+  }
+}
+
+@media (min-width: $screen-xl) {
+  .main {
+    margin-left: 300px;
   }
 }

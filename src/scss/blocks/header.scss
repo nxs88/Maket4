@@ -140,7 +140,12 @@
   .round-icon--profile,
   .divider,
   .logo,
-  .menu {
+  .menu-burger {
     display: none;
+  }
+}
+@media (min-width:$screen-xl){
+  .header{
+    margin-left: 300px;
   }
 }
