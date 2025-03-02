@@ -1,6 +1,7 @@
 .repair-swiper{
   width: 100%;
-  height: 210px;
+  height: 180px;
+  
 }
 
 
@@ -15,6 +16,9 @@
   padding: 16px 16px;
   border-radius: 6px;
   box-shadow: inset 0 0 3px 1px #dddddd;
+}
+.repair-swiper .swiper-slide{
+  width: auto;
 }
 .repair-swiper .swiper-img-icon {
   width: 40px;
