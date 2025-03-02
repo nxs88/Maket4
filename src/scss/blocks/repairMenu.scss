@@ -1,0 +1,70 @@
+.repair-menu {
+  display: none;
+  &__list {
+    display: flex;
+   flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 16px;
+    margin-bottom: 24px;
+    overflow: hidden;
+   height: 160px;
+  }
+
+  
+
+  &__link {
+    display: flex;
+  align-items: flex-start;
+  width: 240px;
+  height: 160px;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 16px 16px;
+  border-radius: 6px;
+  box-shadow: inset 0 0 3px 1px #dddddd;
+  }
+
+  &__link-text {
+    font-weight: 500;
+  }
+
+  &__link-icon {
+    width: 40px;
+  height: 40px;
+  background-image: url(../images/icon.svg);
+  align-self: flex-end;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 0px 9px;
+    border: none;
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  &__btn:hover{
+    outline: 2px solid #d9fff5;
+  }
+  &__btn:active{
+    outline: 2px solid #73e1c3;
+  }
+
+  &__btn-icon {
+    background-image: url(../images/icondown.svg);
+    width: 24px;
+    height: 24px;
+  }
+
+  &__btn-text {
+    font-weight: 500;
+  }
+}
+
+
+@media (min-width: $screen-md) {
+  .repair-menu {
+    display: block;
+  }
+}

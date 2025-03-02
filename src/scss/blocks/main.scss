@@ -1,6 +1,6 @@
 .main {
   &__container {
-    padding: 0 15px;
+    padding: 0 20px;
   }
 
   &__title {
@@ -80,10 +80,17 @@
     border: none;
     background-color: rgb(248, 248, 248);
     padding: 0px;
+    border-radius:6px;
+  }
+  &__link:hover {
+    outline: 2px solid #d9fff5;
+  }
+
+  &__link:active {
+    outline: 2px solid #73e1c3;
   }
 
   &__link-icon {
-    content: '';
     display: inline-block;
     width: 25px;
     height: 25px;
@@ -114,7 +121,6 @@
     display: flex;
     gap: 40px;
     justify-content: space-between;
-
   }
 
   .description {

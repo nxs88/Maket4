@@ -165,7 +165,7 @@
               Мы гордимся тем , что к нам обращаются по рекомендациям и, в свою
               очередь, советуют нас родным и близким.
             </p>
-            <button class="description__link expend-btn">
+            <button class="description__link">
               <span class="description__link-icon"></span>
               <span class="description__link-text">Читать далее</span>
             </button>
@@ -179,16 +179,18 @@
           width="530"
         />
       </acrticle>
-      <!-- Brands-swiper -->
+      <!-- Первый свайпер -->
       <div class="swiper-header">
         <div class="swiper-header__line"></div>
         <div class="container">
           <div class="swiper-header__inner">
-            <h2 class="swiper-header__text">Ремонт техники различных брендов</h2>
+            <h2 class="swiper-header__text"
+              >Ремонт техники различных брендов</h2
+            >
           </div>
         </div>
       </div>
-      <section class="swiper brands-swiper">
+      <section class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <a href="#" class="swiper-link">
@@ -198,7 +200,11 @@
           </div>
           <div class="swiper-slide">
             <a href="#" class="swiper-link">
-              <img src="../images/samsung.svg" alt="Samsung" class="swiper-img" />
+              <img
+                src="../images/samsung.svg"
+                alt="Samsung"
+                class="swiper-img"
+              />
               <span class="swiper-img-icon"></span>
             </a>
           </div>
@@ -216,7 +222,11 @@
           </div>
           <div class="swiper-slide">
             <a href="#" class="swiper-link">
-              <img src="../images/viewsonic.svg" alt="ViewSonic" class="swiper-img" />
+              <img
+                src="../images/viewsonic.svg"
+                alt="ViewSonic"
+                class="swiper-img"
+              />
               <span class="swiper-img-icon"></span>
             </a>
           </div>
@@ -241,102 +251,226 @@
         </div>
         <div class="swiper-pagination"></div>
       </section>
-      <!-- <div class="main"> -->
+      <!-- Меню из  первого свайпера  -->
+      <div class="container">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img
+                  src="../images/Lenovo.svg"
+                  alt="Lenovo"
+                  class="menu__img"
+                />
+                <span class="menu__img-icon"></span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img
+                  src="../images/samsung.svg"
+                  alt="Samsung"
+                  class="menu__img"
+                />
+                <span class="menu__img-icon"></span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"
+                ><img src="../images/apple.svg" alt="Apple" class="menu__img" />
+                <span class="menu__img-icon"></span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"
+                ><img src="../images/bosch.svg" alt="Bosch" class="menu__img" />
+                <span class="menu__img-icon"></span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"
+                ><img src="../images/hp.svg" alt="Hp" class="menu__img" />
+                <span class="menu__img-icon"></span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"
+                ><img src="../images/acer.svg" alt="Acer" class="menu__img" />
+                <span class="menu__img-icon"></span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"
+                ><img src="../images/bosch.svg" alt="Bosch" class="menu__img" />
+                <span class="menu__img-icon"></span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <img
+                  src="../images/samsung.svg"
+                  alt="Samsung"
+                  class="menu__img"
+                />
+                <span class="menu__img-icon"></span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"
+                ><img
+                  src="../images/acer.svg"
+                  alt="Acer"
+                  class="menu__img"
+                /><span class="menu__img-icon"></span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"
+                ><img
+                  src="../images/Lenovo.svg"
+                  alt="Lenovo"
+                  class="menu__img" /><span class="menu__img-icon"></span
+              ></a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"
+                ><img
+                  src="../images/bosch.svg"
+                  alt="Bosch"
+                  class="menu__img" /><span class="menu__img-icon"></span
+              ></a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"
+                ><img src="../images/apple.svg" alt="Apple" class="menu__img" />
+                <span class="menu__img-icon"></span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link"
+                ><img
+                  src="../images/sony.svg"
+                  alt="Sony"
+                  class="menu__img" /><span class="menu__img-icon"></span
+              ></a>
+            </li>
+          </ul>
+          <button class="menu__btn">
+            <span class="menu__btn-icon"></span>
+            <span class="menu__btn-text">Показать все</span>
+          </button>
+        </nav>
+      </div>
+      
+      <!-- Второй свайпер -->
+      <div class="swiper-header">
+        <div class="swiper-header__line"></div>
         <div class="container">
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="#" class="menu__link">
-                  <img src="../images/Lenovo.svg" alt="Lenovo" class="menu__img" />
-                  <span class="menu__img-icon"></span>
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">
-                  <img src="../images/samsung.svg" alt="Samsung" class="menu__img" />
-                  <span class="menu__img-icon"></span>
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link"
-                  ><img src="../images/apple.svg" alt="Apple" class="menu__img" />
-                  <span class="menu__img-icon"></span>
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link"
-                  ><img src="../images/bosch.svg" alt="Bosch" class="menu__img" />
-                  <span class="menu__img-icon"></span>
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link"
-                  ><img src="../images/hp.svg" alt="Hp" class="menu__img" />
-                  <span class="menu__img-icon"></span>
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link"
-                  ><img src="../images/acer.svg" alt="Acer" class="menu__img" />
-                  <span class="menu__img-icon"></span>
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link"
-                  ><img src="../images/bosch.svg" alt="Bosch" class="menu__img" />
-                  <span class="menu__img-icon"></span>
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">
-                  <img src="../images/samsung.svg" alt="Samsung" class="menu__img" />
-                  <span class="menu__img-icon"></span>
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link"
-                  ><img src="../images/acer.svg" alt="Acer" class="menu__img" /><span
-                    class="menu__img-icon"
-                  ></span>
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link"
-                  ><img
-                    src="../images/Lenovo.svg"
-                    alt="Lenovo"
-                    class="menu__img" /><span class="menu__img-icon"></span
-                ></a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link"
-                  ><img
-                    src="../images/bosch.svg"
-                    alt="Bosch"
-                    class="menu__img" /><span class="menu__img-icon"></span
-                ></a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link"
-                  ><img src="../images/apple.svg" alt="Apple" class="menu__img" />
-                  <span class="menu__img-icon"></span>
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link"
-                  ><img src="../images/sony.svg" alt="Sony" class="menu__img" /><span
-                    class="menu__img-icon"
-                  ></span
-                ></a>
-              </li>
-            </ul>
-            <button class="menu__btn">
-              <span class="menu__btn-icon"></span>
-              <span class="menu__btn-text">Показать все</span>
-            </button>
-          </nav>
+          <div class="swiper-header__inner">
+            <h2 class="swiper-header__text">Ремонт различных видов техники</h2>
+          </div>
         </div>
-      <!-- </div> -->
+      </div>
+      <section class="repair-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="swiper-link">
+              <span class="swiper-text">Ремонт ноутбуков </span>
+              <span class="swiper-img-icon"></span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="swiper-link">
+              <span class="swiper-text">Ремонт планшетов</span>
+              <span class="swiper-img-icon"></span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="swiper-link">
+              <span class="swiper-text">Ремонт ПК</span>
+              <span class="swiper-img-icon"></span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="swiper-link">
+              <span class="swiper-text">Ремонт мониторов</span>
+              <span class="swiper-img-icon"></span>
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- Меню из второго свайпера -->
+      <div class="container">
+        <nav class="repair-menu">
+          <ul class="repair-menu__list">
+            <li class="repair-menu__item"
+              ><a href="#" class="repair-menu__link">
+                <span class="repair-menu__link-text">Ремонт мониторов</span>
+                <span class="repair-menu__link-icon"></span> </a
+            ></li>
+            <li class="repair-menu__item"
+              ><a href="#" class="repair-menu__link"
+                ><span class="repair-menu__link-text">Ремонт ПК</span>
+                <span class="repair-menu__link-icon"></span></a
+            ></li>
+            <li class="repair-menu__item"
+              ><a href="#" class="repair-menu__link">
+                <span class="repair-menu__link-text">Ремонт планшетов</span>
+                <span class="repair-menu__link-icon"></span></a
+            ></li>
+            <li class="repair-menu__item"
+              ><a href="#" class="repair-menu__link">
+                <span class="repair-menu__link-text">Ремонт ноутбуков </span>
+                <span class="repair-menu__link-icon"></span></a
+            ></li>
+          </ul>
+          <button class="repair-menu__btn">
+            <span class="repair-menu__btn-icon"></span>
+            <span class="repair-menu__btn-text">Показать все</span>
+          </button>
+        </nav>
+      </div>
+      <!-- Третий свайпер -->
+      <div class="swiper-header">
+        <div class="swiper-header__line"></div>
+        <div class="container">
+          <div class="swiper-header__inner">
+            <h2 class="swiper-header__text">Цены на услуги</h2>
+          </div>
+        </div>
+      </div>
+      <section class="price-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="swiper-link">
+              <span class="swiper-text">Ремонт ноутбуков </span>
+              <span class="swiper-img-icon"></span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="swiper-link">
+              <span class="swiper-text">Ремонт планшетов</span>
+              <span class="swiper-img-icon"></span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="swiper-link">
+              <span class="swiper-text">Ремонт ПК</span>
+              <span class="swiper-img-icon"></span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="swiper-link">
+              <span class="swiper-text">Ремонт мониторов</span>
+              <span class="swiper-img-icon"></span>
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+
     </main>
   </body>
 </html>

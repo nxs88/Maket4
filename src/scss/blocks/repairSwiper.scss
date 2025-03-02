@@ -1,0 +1,27 @@
+.repair-swiper{
+  width: 100%;
+  height: 210px;
+}
+
+
+
+.repair-swiper .swiper-link {
+  display: flex;
+  align-items: flex-start;
+  width: 211px;
+  height: 130px;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 16px 16px;
+  border-radius: 6px;
+  box-shadow: inset 0 0 3px 1px #dddddd;
+}
+.repair-swiper .swiper-img-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/icon.svg);
+  align-self: flex-end;
+}
+.repair-swiper .swiper-text{
+  font-weight: 500;
+}
