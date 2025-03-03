@@ -1,0 +1,25 @@
+.footer {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  color:#7E7E82;
+  padding: 19px 0px;
+  text-align: center;
+  letter-spacing: 0px;
+
+  &__dev {
+    margin-bottom: 16px;
+  }
+
+  &__privacy {
+    color:#7E7E82;
+    
+  }
+  &__privace:hover{
+    text-decoration: underline;
+  }
+
+  &__disclaimer {
+    margin-top: 16px;
+  }
+}

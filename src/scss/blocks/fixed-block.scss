@@ -4,7 +4,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  width: 272px;
+  width: 320px;
   height: 100vh;
   padding: 0 24px;
   box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
@@ -29,7 +29,8 @@
   height: 40px;
   border-radius: 50%;
   border: none;
-  transition: transform 0.3s;
+  transition: transform 0.5s ease;
+  
 
   &--menu {
     background: url(../images/menu.svg);
@@ -120,10 +121,14 @@
   color: #7e7e82;
 }
 .fb-round-icon {
+  
   transition: transform 0.5s ease;
 }
 .fb-round-icon:hover {
   transform: scale(1.2);
+}
+.fb-round-icon:active{
+  transform: translateY(2px); 
 }
 
 .fb-round-icon--menu {

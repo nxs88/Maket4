@@ -1,0 +1,39 @@
+.card-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  background-color:#FF3E79;
+  width:120px;
+  height: 32px;
+  border: none;
+  border-radius: 16px;
+  &__btn:hover{
+    background-color:#f07499;
+  }
+  &__btn:active{
+    background-color:#ee4175;
+  }
+  &__text {
+    color:#fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  margin-left: 12px;
+  }
+
+  &__icon {
+    background-image: url(../images/dropdown.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 24px;
+  height: 24px;
+  }
+}
+.card-btn--statick{
+  position: static;
+}

@@ -1,0 +1,26 @@
+.information {
+max-width: 470px;
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-bottom: 16px;
+  }
+
+  &__link-text {
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+   
+  }
+
+  &__link-icon {
+    display: inline-block;
+    background-image: url(../images/ic_more.svg);
+    width: 24px;
+    height: 27px;
+    vertical-align: middle;
+  }
+}
+
