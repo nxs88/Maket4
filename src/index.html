@@ -34,6 +34,7 @@
         </div>
       </div>
     </header>
+
     <!-- Мэйн -->
     <div class="shadow"></div>
     <main class="main">
@@ -643,5 +644,46 @@
         </div>
       </footer>
     </aside>
+    <aside class="modal modal--feedback">
+      <h2 class="modal__title">Обратная связь</h2>
+      <form action="#" class="modal__form">
+        <input
+          type="text"
+          class="modal__name"
+          name="feedback-name"
+          placeholder="Имя"
+        />
+        <input
+          type="tel"
+          class="modal__tel"
+          name="feedback-telephone"
+          placeholder="Телефон"
+        />
+        <input
+          type="email"
+          class="modal__mail"
+          name="feedback-email"
+          placeholder="Электронная почта"
+        />
+        <input
+          type="textarea"
+          class="modal__message"
+          name="feedback-message"
+          placeholder="Сообщение"
+        />
+      </form>
+      <p class="modal__text"
+        >Нажимая “отправить”, вы даете согласие на
+        <a href="#" class="modal__link">обработку персональных данных</a> и
+        соглашаетесь с нашей
+        <a href="#" class="modal__link">политикой конфиденциальности</a></p
+      >
+      <button class="card-btn card-btn--modal">
+        <span class="card-btn__text">Отправить</span>
+        <span class="card-btn__icon"></span>
+      </button>
+      <button class="round-icon round-icon--close"></button>
+    </aside>
+    <div class="overlay"></div>
   </body>
 </html>

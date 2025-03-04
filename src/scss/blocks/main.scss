@@ -47,10 +47,10 @@
 
     font-size: 16px;
     font-weight: 500;
-    color: #7e7e82;
+    color: $currentItemColor;
   }
   &__item:hover {
-    outline: 2px solid #b8ffec;
+    outline: 2px solid $outlineColor;
     background-color: #fff;
   }
 }

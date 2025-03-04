@@ -13,7 +13,7 @@ let repairSwiper = null
 let priceSwiper = null
 
 function checkSwiper() {
-  if (window.innerWidth >= 768) {
+  if (window.innerWidth >= 767) {
     if (swiperElement) swiperElement.style.display = 'none';
     if (repairSwiperElement) repairSwiperElement.style.display = 'none';
     if (priceSwiperElement) priceSwiperElement.style.display = 'none';

@@ -5,7 +5,7 @@
   position: absolute;
   right: 16px;
   bottom: 16px;
-  background-color:#FF3E79;
+  background-color:$btn-color;
   width:120px;
   height: 32px;
   border: none;
@@ -36,4 +36,10 @@
 }
 .card-btn--statick{
   position: static;
+}
+
+.card-btn--modal{
+  position: static;
+  width: 136px;
+  height: 32px;
 }

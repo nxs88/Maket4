@@ -54,38 +54,38 @@
   letter-spacing: -0.2px;
   line-height: 24px;
 }
-.round-icon {
-  background-color: #ff3e79;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  margin-right: 5px;
-  &--menu {
-    background-image: url(../images/ic_burger.svg);
-  }
+// .round-icon {
+//   background-color: $btn-color;
+//   width: 40px;
+//   height: 40px;
+//   border-radius: 50%;
+//   border: none;
+//   margin-right: 5px;
+//   &--menu {
+//     background-image: url(../images/ic_burger.svg);
+//   }
 
-  &--contacts {
-    background-image: url(../images/ic_call.svg);
-  }
+//   &--contacts {
+//     background-image: url(../images/ic_call.svg);
+//   }
 
-  &--chat {
-    background-image: url(../images/ic_chat.svg);
-  }
+//   &--chat {
+//     background-image: url(../images/ic_chat.svg);
+//   }
 
-  &--profile {
-    background-image: url(../images/ic_profile.svg);
-  }
+//   &--profile {
+//     background-image: url(../images/ic_profile.svg);
+//   }
 
-  &--request {
-    background-image: url(../images/ic_repair.svg);
-    margin-right: 16px;
-  }
+//   &--request {
+//     background-image: url(../images/ic_repair.svg);
+//     margin-right: 16px;
+//   }
 
-  &--status {
-    background-image: url(../images/ic_checkstatus.svg);
-  }
-}
+//   &--status {
+//     background-image: url(../images/ic_checkstatus.svg);
+//   }
+// }
 
 .logo {
   margin-left: 16px;
