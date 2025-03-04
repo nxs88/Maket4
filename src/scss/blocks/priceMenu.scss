@@ -34,6 +34,10 @@
   border-radius: 10px;
 }
 }
+.active {
+  overflow:visible;
+  height: auto;
+}
  @media(min-width:$screen-md){
   .price-menu{
     display: block;

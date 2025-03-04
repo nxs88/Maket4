@@ -1,9 +1,28 @@
 .price-swiper {
   width: 100%;
-  max-height: 230px;
-  overflow-x: hidden;
-
+  position: relative;
+  overflow: hidden;
   margin-bottom: 32px;
+  
+
+  &::before {
+    content: '';
+    width: 24px;
+    height: 200px;
+    background-image: linear-gradient(to right, #f8f8f8, #f8f8f800);
+    position: absolute;
+    z-index: 2;
+  }
+  &::after {
+    content: '';
+    width: 24px;
+    height: 200px;
+    background-image: linear-gradient(to left, #f8f8f8, #f8f8f800);
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 2;
+  }
 }
 
 

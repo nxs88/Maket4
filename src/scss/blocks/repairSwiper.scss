@@ -1,11 +1,28 @@
-.repair-swiper{
-  width: 100%;
-  max-height: 190px;
-  overflow-x: hidden;
+
   
+  .repair-swiper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  &::before {
+    content: '';
+    width: 24px;
+    height: 160px;
+    background-image: linear-gradient(to right, #f8f8f8, #f8f8f800);
+    position: absolute;
+    z-index: 2;
+  }
+  &::after {
+    content: '';
+    width: 24px;
+    height: 160px;
+    background-image: linear-gradient(to left, #f8f8f8, #f8f8f800);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
 }
-
-
 
 .repair-swiper .swiper-link {
   display: flex;
@@ -19,7 +36,7 @@
   box-shadow: inset 0 0 3px 1px #dddddd;
   margin-bottom: 10px;
 }
-.repair-swiper .swiper-slide{
+.repair-swiper .swiper-slide {
   width: auto;
 }
 .repair-swiper .swiper-img-icon {
@@ -28,6 +45,6 @@
   background-image: url(../images/icon.svg);
   align-self: flex-end;
 }
-.repair-swiper .swiper-text{
+.repair-swiper .swiper-text {
   font-weight: 500;
 }
