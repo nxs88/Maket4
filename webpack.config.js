@@ -9,7 +9,8 @@ module.exports = {
 
   // Выходной файл
   output: {
-    filename: './js/bundle.js'
+    filename: './js/bundle.js',
+    publicPath: '/https://github.com/nxs88/Maket4/'
   },
 
   // Source maps для удобства отладки
@@ -88,11 +89,13 @@ module.exports = {
     }),
 
     // Копируем картинки
-    new CopyWebpackPlugin([
-      {
-        from: './src/images',
-        to: 'images'
-      }
-    ])
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: './src/images',
+          to: 'images'
+        }
+      ]
+    })
   ]
 }
