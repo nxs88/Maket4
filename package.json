@@ -9,6 +9,7 @@
     "javascript",
     "webpack"
   ],
+  "homepage": "https://nxs88.github.io/MaketFinal",
   "license": "ISC",
   "author": "Kata Academy",
   "main": "index.js",
