@@ -4,12 +4,15 @@ const closeBtn = modalFeedback.querySelector('.round-icon--close')
 const overlay = document.querySelector('.overlay')
 
 modalBtn.addEventListener('click', () => {
+  console.log('click')
   overlay.style.display = 'block'
-  modalFeedback.classList.toggle('open')
+  modalFeedback.classList.add('open')
 })
+
+
 closeBtn.addEventListener('click', () => {
   overlay.style.display = 'none'
-  modalFeedback.classList.toggle('open')
+  modalFeedback.classList.remove('open')
 })
 
 overlay.addEventListener('click', () => {
@@ -21,5 +24,5 @@ const fbModalBtn = document.querySelector('.fb-round-icon--chat')
 
 fbModalBtn.addEventListener('click', () => {
   overlay.style.display = 'block'
-  modalFeedback.classList.toggle('open')
+  modalFeedback.classList.add('open')
 })

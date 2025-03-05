@@ -5,11 +5,11 @@ const overlay = document.querySelector('.overlay')
 
 modalBtn.addEventListener('click', () => {
   overlay.style.display = 'block'
-  modalCallback.classList.toggle('open')
+  modalCallback.classList.add('open')
 })
 closeBtn.addEventListener('click', () => {
   overlay.style.display = 'none'
-  modalCallback.classList.toggle('open')
+  modalCallback.classList.remove('open')
 })
 
 overlay.addEventListener('click', () => {
@@ -21,5 +21,5 @@ const fbModalBtn = document.querySelector('.fb-round-icon--phone')
 
 fbModalBtn.addEventListener('click', () => {
   overlay.style.display = 'block'
-  modalCallback.classList.toggle('open')
+  modalCallback.classList.add('open')
 })
