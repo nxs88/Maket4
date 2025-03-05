@@ -1,0 +1,118 @@
+.modal {
+  padding-left: 16px;
+  padding-right: 16px;
+  position: fixed;
+  top: 0;
+  right: -800px;
+  z-index: 20;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  background-color: #fff;
+  transition: right 0.5s ease-out;
+
+  @media (min-width: $screen-md) {
+    width: 320px;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-shadow: 16px 0px 50px rgba(14, 24, 80, 0.2);
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 440px;
+    padding-top: 32px;
+  }
+
+  &__title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -16px;
+      top: -10px;
+      width: 4px;
+      height: 40px;
+      background-color: $highLightColor;
+      border-radius: 2px;
+
+      @media (min-width: $screen-md) {
+        left: -32px;
+      }
+    }
+  }
+
+  &__name,
+  &__tel,
+  &__mail,
+  &__message {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #000;
+
+    border: 2px solid #eaeaea;
+    border-radius: 8px;
+    &:focus {
+      outline: none;
+      border-color: $highLightColor;
+    }
+    &::placeholder {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: #b5b6bc;
+    }
+  }
+  .modal__message {
+    min-height: 118px;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: $currentItemColor;
+  }
+
+  &__link {
+    color: $btn-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.modal--feedback.open {
+  right: 0;
+}
+.modal--callback.open {
+  right: 0;
+}
+.card-btn--modal {
+  margin-left: auto;
+}
+.round-icon {
+  &--close {
+    position: absolute;
+    top: 24px;
+    left: 16px;
+  }
+  @media (min-width: $screen-md) {
+    top: 25px;
+    left: -72px;
+  }
+}

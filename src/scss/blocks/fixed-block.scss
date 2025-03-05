@@ -9,7 +9,7 @@
   padding: 0 24px;
   box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
   background-color: #fff;
-  z-index: 2;
+  z-index: 20;
   transition: transform 0.5s ease-out;
   transform: translateX(-100%);
 }
@@ -30,7 +30,6 @@
   border-radius: 50%;
   border: none;
   transition: transform 0.5s ease;
-  
 
   &--menu {
     background: url(../images/menu.svg);
@@ -121,14 +120,13 @@
   color: $currentItemColor;
 }
 .fb-round-icon {
-  
   transition: transform 0.5s ease;
 }
 .fb-round-icon:hover {
   transform: scale(1.2);
 }
-.fb-round-icon:active{
-  transform: translateY(2px); 
+.fb-round-icon:active {
+  transform: translateY(2px);
 }
 
 .fb-round-icon--menu {
@@ -139,11 +137,11 @@
   transform: rotate(180deg) scale(1.2);
 }
 
-
-
-
 @media (min-width: $screen-xl) {
   .fixed-block {
     transform: translateX(0%);
+  }
+  .fb-round-icon--menu{
+    display: none;
   }
 }

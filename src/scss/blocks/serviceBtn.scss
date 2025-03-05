@@ -10,11 +10,11 @@
   height: 32px;
   border: none;
   border-radius: 16px;
-  &__btn:hover{
-    background-color:#f07499;
+  &:hover{
+    background-color:#e62a63;
   }
-  &__btn:active{
-    background-color:#ee4175;
+  &:active{
+    transform: translateY(2px); 
   }
   &__text {
     color:#fff;

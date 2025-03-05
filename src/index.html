@@ -644,6 +644,9 @@
         </div>
       </footer>
     </aside>
+
+    <!-- Feedback modal -->
+
     <aside class="modal modal--feedback">
       <h2 class="modal__title">Обратная связь</h2>
       <form action="#" class="modal__form">
@@ -665,11 +668,34 @@
           name="feedback-email"
           placeholder="Электронная почта"
         />
-        <input
-          type="textarea"
+        <textarea
           class="modal__message"
           name="feedback-message"
           placeholder="Сообщение"
+        ></textarea>
+      </form>
+      <p class="modal__text"
+        >Нажимая “отправить”, вы даете согласие на
+        <a href="#" class="modal__link">обработку персональных данных</a> и
+        соглашаетесь с нашей
+        <a href="#" class="modal__link">политикой конфиденциальности</a></p
+      >
+      <button class="card-btn card-btn--modal">
+        <span class="card-btn__text">Отправить</span>
+        <span class="card-btn__icon"></span>
+      </button>
+      <button class="round-icon round-icon--close"></button>
+    </aside>
+
+    <!-- Callback modal -->
+    <aside class="modal modal--callback">
+      <h2 class="modal__title">Заказать звонок</h2>
+      <form action="#" class="modal__form">
+        <input
+          type="tel"
+          class="modal__tel"
+          name="callback-telephone"
+          placeholder="Телефон"
         />
       </form>
       <p class="modal__text"
@@ -684,6 +710,7 @@
       </button>
       <button class="round-icon round-icon--close"></button>
     </aside>
+
     <div class="overlay"></div>
   </body>
 </html>
