@@ -10,7 +10,7 @@ module.exports = {
   // Выходной файл
   output: {
     filename: './js/bundle.js',
-    publicPath: '/https://github.com/nxs88/Maket4/'
+    
   },
 
   // Source maps для удобства отладки
