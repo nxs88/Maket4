@@ -89,13 +89,11 @@ module.exports = {
     }),
 
     // Копируем картинки
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: './src/images',
-          to: 'images'
-        }
-      ]
-    })
+    new CopyWebpackPlugin([
+      {
+        from: './src/images',
+        to: 'images'
+      }
+    ])
   ]
 }
